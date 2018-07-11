@@ -5,6 +5,11 @@
     font-weight:bold;
 }
 
+.txtAccueil{
+    font-weight:bold;
+    color: #339933;
+}
+
 .majuscule{
     text-transform:uppercase;
 }
@@ -32,7 +37,7 @@
 
 #titre_page {
     font-weight:bold;
-    color: #DA1C5A;
+    color: #339933;
     font-size:130%;
 }
 
@@ -256,4 +261,36 @@ a.socialIcon:hover, .socialHoverClass {
 
 a {
  background-color: #D3D3D3;   
+}
+
+/*Contact*/
+
+#contact{
+    font-family: 'Roboto', sans-serif;
+}
+
+#contact .well{
+    margin-top:30px;
+    border-radius:0;
+}
+
+#contact .form-control{
+    border-radius: 0;
+    border:2px solid #1e1e1e;
+}
+
+#contact button{
+    border-radius:0;
+    border:2px solid #1e1e1e;
+}
+
+#contact .row{
+    margin-bottom:30px;
+}
+
+@media (max-width: 768px) { 
+    #contact iframe {
+        margin-bottom: 15px;
+    }
+    
 }

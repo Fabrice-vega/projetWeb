@@ -1,8 +1,5 @@
 <h2 id="titre_page" class="hidden-xs">Bienvenue &agrave; l'agence de voyage de vos rêves !</h2>
 
-<!--   instanciation ici-->
-
-
 <div class="row">
     <div class="col-md-7">
         <div class="carousel slide" id="gt_carousel" data-ride="carousel">  
@@ -26,11 +23,15 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-    </div>
-    <div class="col-sm-4">
-        <span class="txtGras "><p><br /><img src="./admin/images/logo.jpg" alt="logo de voyage" id="logo_img" class="img-responsive"/>&nbsp;</p>
-        <p><br />
-            <span>Site en travaux</span>
-        </p>
-    </div>
+    </div>    
+    
+    
+        <div class="col-3">
+            <img src="./admin/images/logo.jpg" alt="logo de voyage" id="logo_img" class="img-responsive"/>
+            <span class="txtAccueil">Nous vous invitons à découvrir de nouvelles destinations. Choisissez parmi une sélection de voyages élaborée par nos experts locaux.<br/>  
+            Vivez une expérience de voyage inoubliable du début à la fin, pour toutes les valises et tous les budgets.</span><br/><br/>
+        </div>
+        
+   
+    
 </div>
