@@ -1,7 +1,7 @@
 <?php
 
-$dsn='pgsql:host=localhost;dbname=projet;port=5432';
-$user='demo1';
-$pass='demo1';
+$dsn="mysql:host=localhost;dbname=bdprojetweb";
+$user="root";
+$pass="";
 
 $cnx = new PDO($dsn,$user,$pass);
