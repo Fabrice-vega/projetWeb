@@ -5,13 +5,13 @@
         <div class="carousel slide" id="gt_carousel" data-ride="carousel">  
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-100" id="carousel" src="./admin/images/espagne.jpg" alt="sardaigne">
+                    <img class="d-block w-100" id="carousel" src="./admin/images/gal1.jpg" alt="">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" id="carousel" src="./admin/images/espagne.jpg" alt="espagne">
+                    <img class="d-block w-100" id="carousel" src="./admin/images/gal5.jpg" alt="">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" id="carousel" src="./admin/images/carousel6.jpg" alt="etalage">
+                    <img class="d-block w-100" id="carousel" src="./admin/images/gal9.jpg" alt="">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#gt_carousel" role="button" data-slide="prev">

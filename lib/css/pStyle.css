@@ -131,3 +131,8 @@ footer {
 #submit_res input{
     line-height: 50px;
 }
+
+.rowdate {
+    
+    width: 50%;
+}

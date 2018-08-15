@@ -11,7 +11,7 @@
  *
  * @author Fabrice
  */
-class ContactDB extends ContactDB{
+class ContactDB extends Contact {
 
     private $_db;
     private $_clientArray = array();
@@ -41,26 +41,28 @@ class ContactDB extends ContactDB{
         return $_clientArray;
     }
 
-    public function addClient(array $data) {
-        $query = "insert into CONTACT (NOM,MAIL,TEL,TEXTE,DATE_DEMANDE)"
-                . " values (:nom,:mail,:tel,:texte,NOW())";
+    public function addContact(array $data) {
+        $query = "insert into CONTACT (NOM,MAIL,TEL,TEXTE,DATE_DEMANDE) values (:nom,:mail,:tel,:texte,NOW())";
 
         try {
             $resultset = $this->_db->prepare($query);
-            $resultset->bindValue(':nom', $data['name'], PDO::PARAM_STR);
+            
+            /*$resultset->bindValue(':nom', $data['name'], PDO::PARAM_STR);
             $resultset->bindValue(':mail', $data['email'], PDO::PARAM_STR);
             $resultset->bindValue(':tel', $data['tel'], PDO::PARAM_STR);
-            $resultset->bindValue(':texte', $data['texte'], PDO::PARAM_STR);
-            $resultset->execute();
+            $resultset->bindValue(':texte', $data['texte'], PDO::PARAM_STR);*/
+            $resultset->execute($data);
+            return true;
         } catch (PDOException $e) {
             print "<br/>Echec de l'insertion";
             print $e->getMessage();
+            return false;
         }
     }
 
     function getVue_contact() {
         try {
-            $query = "SELECT * FROM CONTACT order by DATE_DEMANDE desc";
+            $query = "SELECT * FROM CONTACT ";
             $resultset = $this->_db->prepare($query);
 
             $resultset->execute();

@@ -1,6 +1,30 @@
 <section id="contact">
   <div class="container">
-    
+    <?php 
+       if(!empty($_POST)) {
+           //var_dump($_POST);
+           
+           $contactDB = new ContactDB($cnx);
+           $newContact = [
+               "nom" => $_POST["nom"],
+               "mail" => $_POST["email"],
+               "tel" => $_POST["tel"],
+               "texte" => $_POST["message"]
+           ];
+           $success = $contactDB->addContact($newContact);
+           if($success) {
+               $_SESSION["successContact"] = "<strong>Contact envoyé</strong>";
+           }
+           
+       }
+            if(isset($_SESSION["successContact"])): ?>
+            <div class="alert alert-info w-75" role="alert">
+            <?= $_SESSION["successContact"]; ?>
+            </div>
+        <?php 
+            unset($_SESSION["successContact"]);
+            endif;
+        ?>
 	
 	<div class="row">
             <div class="col-md-7">
@@ -9,20 +33,20 @@
 
       <div class="col-md-4">
           <h4><strong>Contactez nous</strong></h4><br/>
-        <form  action="<?php print $_SERVER['PHP_SELF']; ?>" method="get" id="form_contact">
+        <form  action="" method="post" id="form_contact">
           <div class="form-group">
-            <input type="text" class="form-control" name="" value="" placeholder="Nom">
+            <input type="text" class="form-control" name="nom" value="" placeholder="Nom">
           </div>
           <div class="form-group">
-            <input type="email" class="form-control" name="" value="" placeholder="E-mail">
+            <input type="email" class="form-control" name="email" value="" placeholder="E-mail">
           </div>
           <div class="form-group">
-            <input type="tel" class="form-control" name="" value="" placeholder="Téléphone">
+            <input type="tel" class="form-control" name="tel" value="" placeholder="Téléphone">
           </div>
           <div class="form-group">
-            <textarea class="form-control" name="" rows="3" placeholder="Message"></textarea>
+            <textarea class="form-control" name="message" rows="3" placeholder="Message"></textarea>
           </div>
-          <button class="btn btn-default" type="submit" name="button">
+          <button class="btn btn-default" type="submit">
               <i class="fa fa-paper-plane-o" aria-hidden="true"></i> Envoyer
           </button>
         </form>
