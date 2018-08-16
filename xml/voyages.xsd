@@ -1,0 +1,18 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="voyages">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="voyage" maxOccurs="unbounded">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element type="xsd:positiveInteger" name="id"/>
+                            <xsd:element type="xsd:string" name="pays"/>
+                            <xsd:element type="xsd:string" name="image"/>
+                            <xsd:element type="xsd:string" name="ville"/>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

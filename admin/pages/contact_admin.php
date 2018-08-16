@@ -21,9 +21,9 @@ $nbrContacts = count($liste);
             <table class="table">
                 <thead>
                     <tr class="filters">
-                        <th><input type="text" class="form-control" placeholder="ID" disabled></th>
                         <th><input type="text" class="form-control" placeholder="Nom" disabled></th>
                         <th><input type="text" class="form-control" placeholder="Mail" disabled></th>
+                        <th><input type="text" class="form-control" placeholder="Tel" disabled></th>
                         <th><input type="text" class="form-control" placeholder="Texte" disabled></th>
                         <th><input type="text" class="form-control" placeholder="Date" disabled></th>
                     </tr>

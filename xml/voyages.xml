@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="voyages.xsl"?>
+<voyages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="voyages.xsd">
+    <voyage>
+        <id>1</id>
+        <pays>USA</pays>
+        <ville>SpringHill</ville>
+        <image>gal1.jpg</image>
+    </voyage>
+	    <voyage>
+        <id>2</id>
+        <pays>Monaco</pays>
+        <ville>Monte Carlo Bay</ville>
+        <image/>
+    </voyage>
+    <voyage>
+        <id>3</id>
+        <pays>Espagne</pays>
+        <ville>La Quinta Inn</ville>
+        <image>gal3.jpg</image>
+    </voyage>
+    <voyage>
+        <id>7</id>
+        <pays>Bulgarie</pays>
+        <ville>Marinela Sofia</ville>
+        <image>gal7.jpg</image>
+    </voyage>
+    <voyage>
+        <id>9</id>
+        <pays>Italie</pays>
+        <ville>Cagliari</ville>
+        <image>gal9.jpg</image>
+    </voyage>
+    <voyage>
+        <id>5</id>
+        <pays>Allemagne</pays>
+        <ville>The Falkensteiner</ville>
+        <image/>
+    </voyage>
+    <voyage>
+        <id>6</id>
+        <pays>Egypte</pays>
+        <ville>Al Masa</ville>
+        <image>gal12.jpg</image>
+    </voyage>
+
+</voyages>

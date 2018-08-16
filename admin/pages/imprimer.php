@@ -49,7 +49,7 @@ for ($i = 0; $i < $nbrReservations; $i++) {
     $pdf->SetXY($x + 7, $y);
     $pdf->cell(1, 1, utf8_decode($liste[$i]['EMAIL_CLIENT']), 0, 0, 'C');
     $pdf->SetXY($x + 10, $y);
-    $pdf->cell(1, 1, utf8_decode($liste[$i]['DESTINATION']), 0, 0, 'C');
+    $pdf->cell(1, 1, utf8_decode($liste[$i]['PAYS']), 0, 0, 'C');
     $pdf->SetXY($x + 13, $y);
     $pdf->cell(1, 1, utf8_decode($liste[$i]['DATE']), 0, 0, 'C');
     $y += 2;

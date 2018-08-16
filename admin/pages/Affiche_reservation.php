@@ -36,7 +36,7 @@ $nbrReservations = count($liste);
                                     <td><?php print $liste[$i]['NOM_CLIENT']; ?></td>
                                     <td><?php print $liste[$i]['EMAIL_CLIENT']; ?></td>
                                     <td><?php print $liste[$i]['TEL_CLIENT']; ?></td>
-                                    <td><?php print $liste[$i]['DESTINATION']; ?></td>
+                                    <td><?php print $liste[$i]['PAYS']; ?></td>
                                     <td><?php print $liste[$i]['DATE']; ?></td>
                                 </tr>
                             <?php }

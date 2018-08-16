@@ -11,7 +11,7 @@
  *
  * @author Fabrice
  */
-class ContactDB extends Contact {
+class ContactDB  {
 
     private $_db;
     private $_clientArray = array();
